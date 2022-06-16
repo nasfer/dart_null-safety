@@ -1,0 +1,16 @@
+// null-safety
+
+void main(){
+  String? nome; // com ponto de interrogação eu digo que esta variavel pode ser nula
+  nome = 'Wander';
+  print(nome!);  // ponto de exclamação para indicar que não é nulo, use se ainda nao atribuiu valor
+  nome = null; // nesse caso posso definir como nulo porque eu usei o ponto de interrogação antes
+  print(nome);
+  
+  late String sobrenome; // minha variável vai receber tardiamente um valor, mas nao agora
+  sobrenome = 'Ferreira'; // recebe tardiamente um valor
+  print(sobrenome);
+  sobrenome = null; // ocorre um erro porque nao pode atribuir nulo neste caso
+  
+  
+}
